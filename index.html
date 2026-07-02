@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: green;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        button{
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+            height: 50px;
+            width: 100px;
+            font-size: larger;
+        }
+        .eat{
+            background-color: pink;
+        }
+        .sleep{
+            background-color: yellow;
+        }
+        .play{
+            background-color: orange;
+        }
+        img{
+            border-radius: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="im" src="https://media1.tenor.com/m/Ile97eFHbdIAAAAd/doggy-cute.gif" alt="doggie">
+        <div>
+            <button class="eat" onclick="doggie('https://media1.tenor.com/m/PQqXIXEPnPAAAAAd/dog-eat-dog.gif')">EAT</button>
+            <button class="sleep" onclick="doggie('https://media1.tenor.com/m/HU4OJz6ufyIAAAAd/dog-hides-phone-dog-holds-phone.gif')">SLEEP</button>
+            <button class="play" onclick="doggie('https://media1.tenor.com/m/ZelmtJ-vLWUAAAAC/labradorretriever-labrador.gif')">PLAY</button>
+        </div>
+    </div>
+</body>
+<script>
+    function doggie(a){
+        let b=document.getElementById('im')
+        b.src=a
+    }
+</script>
+</html>
